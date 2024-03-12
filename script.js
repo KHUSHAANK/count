@@ -1,5 +1,5 @@
 const counterEl = document.getElementById('counter');
-let count = 0;  // Initial count set to 0
+let count = 0; // Initial count set to 0
 
 const incrementBtn = document.getElementById('increment');
 incrementBtn.addEventListener('click', () => {
@@ -24,4 +24,14 @@ setStartingValueBtn.addEventListener('click', () => {
   } else {
     alert("Please enter a valid number");
   }
+});
+
+const toggleModeBtn = document.getElementById('toggle-mode');
+const bodyEl = document.body;
+
+toggleModeBtn.addEventListener('click', () => {
+  bodyEl.classList.toggle('dark-mode');
+
+  const isDarkMode = bodyEl.classList.contains('dark-mode');
+  toggleModeBtn.textContent = isDarkMode ? 'SUN' : 'MOON';
 });
