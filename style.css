@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Responsive adjustments for buttons and input */
+button,
+input[type="number"] {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Adjust counter font size for better visibility on small screens */
+#counter {
+    margin: 0 10px;
+    font-size: 2em;
+}
+
+/* Apply media queries for different screen sizes (optional) */
+@media (max-width: 768px) {
+    .container {
+        font-size: 1.2rem;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;  /* Adjust footer font size */
+}
+
+footer a {
+    color: #000;  /* Adjust link color */
+    text-decoration: none;  /* Remove underline from link */
+}
+
+footer a:hover {
+    text-decoration: underline;  /* Add underline on link hover */
+}
